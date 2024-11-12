@@ -4,13 +4,13 @@ public class Main {
         Author author1 = new Author("Вячеслав", "Лем");
         Author author2 = new Author("Федор", "Достоевский");
 
-        Book book1 = new Book("Солярис", author1.getFirstName(), 1961);
-        Book book2 = new Book("Идиот", author2.getFirstName(), 1868);
-        book1.setYearPublication(1960);
+        Book bookName1 = new Book("Солярис", author1, 1961);
+        Book bookName2 = new Book("Идиот", author2, 1868);
+        bookName1.setYearPublication(1960);
 
 
-        System.out.println(" Автор - " + author1.getFirstName() + " " + author1.getLastName() + " , название книги - " + book1.getTitle() + ", год публикации - " + book1.getYearPublication());
-        System.out.println(" Автор - " + author2.getFirstName() + " " + author2.getLastName() + " , название книги - " + book2.getTitle() + ", год публикации - " + book2.getYearPublication());
+        System.out.println(" Автор - " + author1.getFirstName() + " " + author1.getLastName() + " , название книги - " + bookName1.getTitle() + ", год публикации - " + bookName1.getYearPublication());
+        System.out.println(" Автор - " + author2.getFirstName() + " " + author2.getLastName() + " , название книги - " + bookName2.getTitle() + ", год публикации - " + bookName2.getYearPublication());
 
     }
 }
